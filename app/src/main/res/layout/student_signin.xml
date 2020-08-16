@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="签 到 中 心"
+            >
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@color/view_line"
+            />
+    </LinearLayout>
+
+    <!--空白填充-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/radius_drawable_bg"
+        >
+
+            <TextView
+                android:id="@+id/tv_student_signin_courseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程:课程的名字"
+                android:padding="5dip"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                >
+            </TextView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="50dp"
+            >
+            <TextView
+
+                android:id="@+id/tv_btn_sign_student"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dip"
+                android:background="#858282"
+                android:clickable="false"
+                android:gravity="center"
+                android:paddingLeft="15dip"
+                android:paddingTop="2dip"
+                android:paddingRight="15dip"
+                android:paddingBottom="2dip"
+                android:text="签 到"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HighSchoolManger</string>
+    <string name="Authorization">Authorization</string>
+    <string name="role">role</string>
+    <string name="userId">userId</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bottom_tab_know">知道</string>
+    <string name="bottom_tab_wantknow">我想知道</string>
+    <string name="bottom_tab_my">我的</string>
+    <string name="bottom_mainPage">主页</string>
+    <string name="bottom_message">通知</string>
+    <string name="image_high">20dp</string>
+    <string name="spin_title_xueyuan">学院选择</string>
+    <string name="spin_title_signin">状态选择</string>
+    <string name="spin_title_zhuanye">专业选择</string>
+    <string name="spin_title_banji">班级选择</string>
+    <string name="spin_title_kecheng">课程选择</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_data">暂时没有数据</string>
+</resources>

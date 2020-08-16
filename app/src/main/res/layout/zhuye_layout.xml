@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zhuye_center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    >
+   <GridView
+       android:id="@+id/gv_icon"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:numColumns="4"
+       >
+   </GridView>
+
+</LinearLayout>
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--android:gravity="center"-->
+<!--    >-->
+<!--&lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;            >&ndash;&gt;-->
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/qiandao_iv"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="@dimen/zhuye_width"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/zhuye_high"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/qiandao"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;            </ImageView>&ndash;&gt;-->
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="@dimen/zhuye_width"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/zhuye_text_high"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="@dimen/zhuye_text_size"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@+id/qiandao_iv"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="签 到"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:gravity="center_vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;            </TextView>&ndash;&gt;-->
+<!--&lt;!&ndash;        </RelativeLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            >&ndash;&gt;-->
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/zuoye_iv"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="@dimen/zhuye_width"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/zhuye_high"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/zuoye"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;            </ImageView>&ndash;&gt;-->
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="@dimen/zhuye_width"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/zhuye_text_high"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="@dimen/zhuye_text_size"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@+id/zuoye_iv"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="作 业"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;            </TextView>&ndash;&gt;-->
+<!--&lt;!&ndash;        </RelativeLayout> &ndash;&gt;-->
+<!--&lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            >&ndash;&gt;-->
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/kecheng_iv"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="@dimen/zhuye_width"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/zhuye_high"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/kecheng"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;            </ImageView>&ndash;&gt;-->
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="@dimen/zhuye_width"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/zhuye_text_high"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="@dimen/zhuye_text_size"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@+id/kecheng_iv"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="课 程"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;            </TextView>&ndash;&gt;-->
+<!--&lt;!&ndash;        </RelativeLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;        <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;            >&ndash;&gt;-->
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/chengji_iv"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="@dimen/zhuye_width"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/zhuye_high"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/chengji"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;            </ImageView>&ndash;&gt;-->
+<!--&lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="@dimen/zhuye_width"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/zhuye_text_high"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:textSize="@dimen/zhuye_text_size"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_below="@+id/chengji_iv"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="成 绩"&ndash;&gt;-->
+<!--&lt;!&ndash;                >&ndash;&gt;-->
+<!--&lt;!&ndash;            </TextView>&ndash;&gt;-->
+<!--&lt;!&ndash;        </RelativeLayout>&ndash;&gt;-->
+<!--</LinearLayout>-->
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:gravity="center"-->
+<!--    >-->
+<!--<RelativeLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:padding="10dp"-->
+<!--    >-->
+<!--    <ImageView-->
+<!--        android:id="@+id/pinggu_iv"-->
+<!--        android:layout_width="@dimen/zhuye_width"-->
+<!--        android:layout_height="@dimen/zhuye_high"-->
+<!--        android:src="@drawable/pinggu"-->
+<!--        >-->
+<!--    </ImageView>-->
+<!--    <TextView-->
+<!--        android:layout_width="@dimen/zhuye_width"-->
+<!--        android:layout_height="@dimen/zhuye_text_high"-->
+<!--        android:textSize="@dimen/zhuye_text_size"-->
+<!--        android:layout_below="@+id/pinggu_iv"-->
+<!--        android:text="评 估"-->
+<!--        >-->
+<!--    </TextView>-->
+<!--</RelativeLayout>-->
+<!--</LinearLayout>-->

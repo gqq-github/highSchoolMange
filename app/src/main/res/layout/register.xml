@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RegisterActivity" >
+    <View
+        android:id="@+id/view_no"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+    </View>
+    <LinearLayout
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/view_no"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="SING UP"
+            android:textColor="#8D8888"
+            android:textSize="24sp"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center"
+            android:text="WELCOME"
+            android:textColor="#8D8888"
+            android:textSize="24sp"
+            >
+        </TextView>
+    </LinearLayout>
+    <include android:id="@+id/input_register_layout"
+        layout="@layout/input_regsiter_layout"
+        android:layout_below="@id/register_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+    </include>
+
+    <TextView
+        android:id="@+id/main_btn_register"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/input_register_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/text_bg"
+        android:gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingTop="2dip"
+        android:paddingRight="15dip"
+        android:paddingBottom="2dip"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

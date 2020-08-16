@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shandow_shap">
+    <TextView
+        android:id="@+id/tv_homework_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="课程名字:java \n学号 : 04163193\n名字 : 你好 \n问题：大开大合撒客户"
+        android:singleLine="false"
+        android:layout_gravity="center_vertical"
+        android:textColor="#615E5E"
+        android:padding="10dip"
+        android:textSize="16sp"
+        android:layout_weight="3"
+        >
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/tv_question_Homework"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="学生回答"
+            android:layout_gravity="center_vertical"
+            android:textColor="#615E5E"
+            android:textSize="16sp"
+            />
+        <ImageView
+            android:id="@+id/iv_answer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:src="@drawable/banner1"
+            >
+        </ImageView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/tv_homework_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分数:"
+            android:layout_gravity="center_vertical"
+            android:textColor="#E90E0E"
+            android:padding="5dip"
+            android:textSize="16sp"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/et_homeworker_credit"
+            android:layout_width="160sp"
+            android:layout_height="50sp"
+            android:layout_marginLeft="10dip"
+            android:background="#00000000"
+            android:hint="请输入课程分数"
+            android:layout_gravity="center_vertical"
+            android:padding="5dip"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_pigai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="批改"
+            android:background="@drawable/btn_selector"
+            >
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

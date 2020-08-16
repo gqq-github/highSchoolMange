@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/shandow_shap"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:gravity="center_vertical"
+        android:layout_weight="2"
+        >
+        <TextView
+            android:id="@+id/tv_homework"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000"
+            android:text="课程名字:XXXXXXXXX\n说出课程本XXXxXXXXXXXXX\n教师名字：  \n作业结束时间 ：2011-12-12-01-01"
+            >
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:padding="5dp"
+        >
+        <TextView
+            android:id="@+id/homeworker_btn_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_bg"
+            android:layout_gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingTop="2dip"
+            android:paddingRight="15dip"
+            android:paddingBottom="2dip"
+            android:text="答题"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

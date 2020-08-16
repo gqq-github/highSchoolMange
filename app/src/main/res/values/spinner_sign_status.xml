@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data">
+        <item>已签到</item>
+        <item>未签到</item>
+    </string-array>
+</resources>

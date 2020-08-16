@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:scrollbars="vertical"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+<!--	<LinearLayout-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="100dp"-->
+<!--		android:background="#fff"-->
+<!--		>-->
+<!--	</LinearLayout>-->
+	<com.youth.banner.Banner
+		android:id="@+id/banner"
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20dp"
+			android:textColor="#000"
+			android:text="用 户 中 心（学生）"
+			>
+		</TextView>
+
+	</LinearLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:layout_marginBottom="5dip"
+		android:layout_marginTop="5dip"
+		android:layout_marginLeft="1dip"
+		android:layout_marginRight="1dip"
+		android:background="@color/view_line"
+		/>
+ <include android:id="@+id/zhute_center_iclude"
+	 layout="@layout/zhuye_layout"
+	  >
+
+ </include>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="20dp"
+			android:textColor="#000"
+			android:text="今日课程"
+			>
+		</TextView>
+
+	</LinearLayout>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1px"
+		android:layout_marginBottom="5dip"
+		android:layout_marginTop="5dip"
+		android:layout_marginLeft="1dip"
+		android:layout_marginRight="1dip"
+		android:background="@color/view_line"
+		/>
+
+	<!-- 课程显示不全的问题-->
+
+	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:scrollbars="vertical"
+		android:fadingEdge="vertical">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		>
+		<ListView
+			android:id="@+id/lv_course_item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		</ListView>
+<!--	    <LinearLayout-->
+<!--		android:layout_width="match_parent"-->
+<!--		android:layout_height="wrap_content"-->
+<!--		android:background="#fff"-->
+<!--		android:orientation="horizontal"-->
+<!--		android:layout_margin="5dp"-->
+<!--		>-->
+<!--		<TextView-->
+<!--			android:layout_width="wrap_content"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:text="2020/3/28 8:00 操作系统 教师名字"-->
+<!--			>-->
+<!--		</TextView>-->
+<!--	</LinearLayout>-->
+<!--		<LinearLayout-->
+<!--			android:layout_width="match_parent"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:background="#fff"-->
+<!--			android:orientation="horizontal"-->
+<!--			android:layout_margin="5dp"-->
+<!--			>-->
+<!--			<TextView-->
+<!--				android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content"-->
+<!--				android:text="2020/3/28 8:00 操作系统 教师名字"-->
+<!--				>-->
+<!--			</TextView>-->
+<!--		</LinearLayout>-->
+<!--		<LinearLayout-->
+<!--			android:layout_width="match_parent"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:background="#fff"-->
+<!--			android:orientation="horizontal"-->
+<!--			android:layout_margin="5dp"-->
+<!--			>-->
+<!--			<TextView-->
+<!--				android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content"-->
+<!--				android:text="2020/3/28 8:00 操作系统 教师名字"-->
+<!--				>-->
+<!--			</TextView>-->
+<!--		</LinearLayout>-->
+
+<!--		<LinearLayout-->
+<!--			android:layout_width="match_parent"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:background="#fff"-->
+<!--			android:orientation="horizontal"-->
+<!--			android:layout_margin="5dp"-->
+<!--			>-->
+<!--			<TextView-->
+<!--				android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content"-->
+<!--				android:text="2020/3/28 8:00 操作系统 教师名字"-->
+<!--				>-->
+<!--			</TextView>-->
+<!--		</LinearLayout>-->
+<!--		<LinearLayout-->
+<!--			android:layout_width="match_parent"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:background="#fff"-->
+<!--			android:orientation="horizontal"-->
+<!--			android:layout_margin="5dp"-->
+<!--			>-->
+<!--			<TextView-->
+<!--				android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content"-->
+<!--				android:text="2020/3/28 8:00 操作系统 教师名字"-->
+<!--				>-->
+<!--			</TextView>-->
+<!--		</LinearLayout>-->
+<!--		<LinearLayout-->
+<!--			android:layout_width="match_parent"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:background="#fff"-->
+<!--			android:orientation="horizontal"-->
+<!--			android:layout_margin="5dp"-->
+<!--			>-->
+<!--			<TextView-->
+<!--				android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content"-->
+<!--				android:text="2020/3/28 8:00 操作系统 教师名字"-->
+<!--				>-->
+<!--			</TextView>-->
+<!--		</LinearLayout>-->
+<!--		<LinearLayout-->
+<!--			android:layout_width="match_parent"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:background="#fff"-->
+<!--			android:orientation="horizontal"-->
+<!--			android:layout_margin="5dp"-->
+<!--			>-->
+<!--			<TextView-->
+<!--				android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content"-->
+<!--				android:text="2020/3/28 8:00 操作系统 教师名字"-->
+<!--				>-->
+<!--			</TextView>-->
+<!--		</LinearLayout>-->
+<!--		<LinearLayout-->
+<!--			android:layout_width="match_parent"-->
+<!--			android:layout_height="wrap_content"-->
+<!--			android:layout_margin="5dp"-->
+<!--			android:background="#fff"-->
+<!--			android:orientation="horizontal">-->
+
+<!--			<TextView-->
+<!--				android:layout_width="wrap_content"-->
+<!--				android:layout_height="wrap_content"-->
+<!--				android:text="2020/3/28 8:00 操作系统 教师名字"></TextView>-->
+<!--		</LinearLayout>-->
+
+	</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

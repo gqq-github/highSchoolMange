@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="院 系 管 理"
+            >
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@color/view_line"
+            />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/radius_drawable_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llbh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_xueyuan_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dip"
+                    android:text="学院名称:"
+                    android:textColor="#E90E0E"
+                    android:textSize="16sp"></TextView>
+
+                <EditText
+                    android:id="@+id/et_xueyuan_edit"
+                    android:layout_width="240dp"
+                    android:layout_height="50sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:background="#00000000"
+                    android:hint="请输入学院名称"
+                    android:padding="5dip"
+                    android:textSize="16sp" />
+                <ImageView
+                    android:id="@+id/iv_add_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/add">
+                </ImageView>
+            </LinearLayout>
+<!--            <ScrollView-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent"-->
+<!--                android:fadingEdge="vertical"-->
+<!--                android:scrollbars="vertical">-->
+            <ListView
+                android:id="@+id/lv_xueyuan_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+            </ListView>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="50dp"
+        >
+        <TextView
+            android:id="@+id/xueyuan_btn_add"
+            android:layout_width="225dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingTop="2dip"
+            android:paddingRight="15dip"
+            android:paddingBottom="2dip"
+            android:text="添加"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

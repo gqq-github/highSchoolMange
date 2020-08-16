@@ -1,0 +1,14 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tv_course_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020/3/28 8:00 操作系统 教师名字"
+        >
+    </TextView>
+</LinearLayout>

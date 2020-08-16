@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <!--页面的title-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="课 程 添 加"
+            >
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@color/view_line"
+            />
+    </LinearLayout>
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:background="@drawable/radius_drawable_bg"
+         >
+
+        <ListView
+            android:id="@+id/lv_course_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ListView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="50dp"
+        >
+        <TextView
+            android:id="@+id/course_btn_add"
+            android:layout_width="225dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingTop="2dip"
+            android:paddingRight="15dip"
+            android:paddingBottom="2dip"
+            android:text="添加"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>
+
+<!--<LinearLayout-->
+<!--android:id="@+id/llbh"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--    >-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="课程编号:"-->
+<!--    android:textColor="#E90E0E"-->
+<!--    >-->
+<!--</TextView>-->
+<!--<EditText-->
+<!--    android:id="@+id/course_id"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="10dip"-->
+<!--    android:background="#00000000"-->
+<!--    android:hint="请输入课程编号"-->
+<!--    android:padding="5dip"-->
+<!--    android:textSize="16sp" />-->
+<!--</LinearLayout>-->
+<!--<View-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="1px"-->
+<!--android:layout_marginBottom="5dip"-->
+<!--android:layout_marginTop="5dip"-->
+<!--android:background="@color/view_line" />-->
+<!--<LinearLayout-->
+<!--android:id="@+id/llname"-->
+<!--android:layout_below="@id/llbh"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--    >-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="课程名字:"-->
+<!--    android:textColor="#E90E0E"-->
+<!--    >-->
+<!--</TextView>-->
+<!--<EditText-->
+<!--    android:id="@+id/course_name"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="10dip"-->
+<!--    android:background="#00000000"-->
+<!--    android:hint="请输入课程名字"-->
+<!--    android:padding="5dip"-->
+<!--    android:textSize="16sp" />-->
+<!--</LinearLayout>-->
+<!--<View-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="1px"-->
+<!--android:layout_marginBottom="5dip"-->
+<!--android:layout_marginTop="5dip"-->
+<!--android:background="@color/view_line" />-->
+<!--<LinearLayout-->
+<!--android:id="@+id/llcredit"-->
+<!--android:layout_below="@id/llname"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--    >-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="课程学分:"-->
+<!--    android:textColor="#E90E0E"-->
+<!--    >-->
+<!--</TextView>-->
+<!--<EditText-->
+<!--    android:id="@+id/course_credit"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="10dip"-->
+<!--    android:background="#00000000"-->
+<!--    android:hint="请输入课程学分"-->
+<!--    android:padding="5dip"-->
+<!--    android:textSize="16sp" />-->
+<!--</LinearLayout>-->
+<!--<View-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="1px"-->
+<!--android:layout_marginBottom="5dip"-->
+<!--android:layout_marginTop="5dip"-->
+<!--android:background="@color/view_line" />-->
+<!--<LinearLayout-->
+<!--android:id="@+id/lldetail"-->
+<!--android:layout_below="@id/llcredit"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--    >-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="课程介绍:"-->
+<!--    android:textColor="#E90E0E"-->
+<!--    >-->
+<!--</TextView>-->
+<!--<EditText-->
+<!--    android:id="@+id/course_detail"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="10dip"-->
+<!--    android:background="#00000000"-->
+<!--    android:hint="请输入课程介绍"-->
+<!--    android:padding="5dip"-->
+<!--    android:textSize="16sp" />-->
+<!--</LinearLayout>-->
+<!--<View-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="1px"-->
+<!--android:layout_marginBottom="5dip"-->
+<!--android:layout_marginTop="5dip"-->
+<!--android:background="@color/view_line" />-->
+<!--<LinearLayout-->
+<!--android:id="@+id/lldate"-->
+<!--android:layout_below="@id/lldetail"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:orientation="horizontal"-->
+<!--    >-->
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="课程日期:"-->
+<!--    android:textColor="#E90E0E"-->
+<!--    >-->
+<!--</TextView>-->
+<!--<EditText-->
+<!--    android:id="@+id/userId"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="10dip"-->
+<!--    android:background="#00000000"-->
+<!--    android:hint="课程日期"-->
+<!--    android:padding="5dip"-->
+<!--    android:textSize="16sp" />-->
+<!--</LinearLayout>-->
+<!--<View-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="1px"-->
+<!--android:layout_marginBottom="5dip"-->
+<!--android:layout_marginTop="5dip"-->
+<!--android:background="@color/view_line" />-->

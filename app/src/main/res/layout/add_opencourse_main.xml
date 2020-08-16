@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:text="开 设 课 程"
+            >
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:background="@color/view_line"
+            />
+    </LinearLayout>
+
+    <!--空白填充-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+    </LinearLayout>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/radius_drawable_bg"
+         android:orientation="vertical">
+         <!--设置下拉框-->
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="5dp"
+                 >
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="选择学院"
+                     android:layout_gravity="center_vertical"
+                     android:textColor="#E90E0E"
+                     android:padding="5dip"
+                     android:textSize="16sp" />
+
+                 <Spinner
+                     android:layout_marginLeft="20dp"
+                     android:id="@+id/spin_xueyuan"
+                     android:layout_width="150dp"
+                     android:layout_height="35dp"
+                     android:layout_gravity="center_horizontal"
+                     android:prompt="@string/spin_title_xueyuan"
+                     android:spinnerMode="dialog" />
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="5dp"
+                 >
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="选择专业"
+                     android:layout_gravity="center_vertical"
+                     android:textColor="#E90E0E"
+                     android:padding="5dip"
+                     android:textSize="16sp" />
+
+                 <Spinner
+                     android:layout_marginLeft="20dp"
+                     android:id="@+id/spin_zhuanye"
+                     android:layout_width="match_parent"
+                     android:layout_height="35dp"
+                     android:layout_gravity="center_horizontal"
+                     android:prompt="@string/spin_title_zhuanye"
+                     android:spinnerMode="dialog" />
+
+             </LinearLayout>
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/llbh"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:orientation="horizontal"
+
+             >
+
+             <TextView
+                 android:id="@+id/tv_opencourse_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:padding="5dip"
+                 android:text="课程编号:"
+                 android:textColor="#E90E0E"
+                 android:textSize="16sp"></TextView>
+
+             <EditText
+                 android:id="@+id/et_opencourse_edit"
+                 android:layout_width="match_parent"
+                 android:layout_height="50sp"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginLeft="10dip"
+                 android:background="#00000000"
+                 android:hint="请输入课程编号"
+                 android:padding="5dip"
+                 android:textSize="16sp" />
+         </LinearLayout>
+         <include
+             android:id="@+id/selectType"
+             layout="@layout/select_course_type"
+             >
+         </include>
+     </LinearLayout>
+     <!--空白填充-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+    </LinearLayout>
+    <!--按钮-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="50dp"
+        >
+        <TextView
+            android:id="@+id/open_course_btn_add"
+            android:layout_width="225dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingTop="2dip"
+            android:paddingRight="15dip"
+            android:paddingBottom="2dip"
+            android:text="添加"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

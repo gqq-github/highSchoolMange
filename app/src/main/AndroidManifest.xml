@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.gq.highschoolmanger">
+    <!--添加网络权限-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity">
+        </activity>
+        <activity android:name=".homepage.HomePageActivity">
+        </activity>
+        <activity android:name=".guanliyuan.ManngerActivity">
+
+        </activity>
+        <activity android:name=".guanliyuan.CourseActivity">
+        </activity>
+        <activity android:name=".guanliyuan.XueYuanActivity">
+        </activity>
+        <activity android:name=".guanliyuan.BanJiActivity"/>
+        <activity android:name=".guanliyuan.TeacherActivity"/>
+        <activity android:name=".guanliyuan.OpenCourseActivity"/>
+        <!--git课程表-->
+        <activity
+            android:label="新建课程"
+            android:name=".demo.AddCourseActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+
+<!--        <activity-->
+<!--            android:name=".demo.AboutActivity"-->
+<!--            android:label="关于"-->
+<!--            android:theme="@style/Theme.AppCompat.Light.Dialog"/>-->
+    <activity
+        android:allowBackup="true"
+        android:icon="@mipmap/timetable_114px"
+        android:label="课程表"
+        android:roundIcon="@mipmap/timetable_114px"
+        android:theme="@style/AppTheme1"
+        android:name=".demo.kechengbiaoActivity"/>
+
+        <activity android:name=".jiaoshi.TeacherMainActivity"/>
+        <activity android:name=".jiaoshi.ShowTeacherSelectCourseActivity"/>
+        <activity android:name=".jiaoshi.TeacherSelectCourseActivity"/>
+        <activity android:name=".jiaoshi.CreateSignInActivity"/>
+        <activity android:name=".jiaoshi.TeacherSendHomeWorkActivity"/>
+        <activity android:name=".jiaoshi.TeacherSeeHomework"/>
+        <activity android:name=".jiaoshi.TeacherSeeStudentSignIn"/>
+
+        <activity android:name=".student.StudentMainActivity"/>
+        <activity android:name=".student.StudentInfoActivity"/>
+        <activity android:name=".student.ShowStudentCourseActivity"/>
+        <activity android:name=".student.StudentSelectCourseActivity"/>
+        <activity android:name=".student.StudentCourseTableActivity"/>
+        <activity android:name=".student.StudentQianDaoActivity"/>
+         <activity android:name=".student.StudentSendHomeWorkActivity"/>
+        <activity android:name=".student.DoHomeworkByCamera"/>
+        <activity android:name=".student.StudentSeeHomework"/>
+        <activity android:name=".student.ShowStudentPersonalInfo"/>
+    </application>
+
+</manifest>
